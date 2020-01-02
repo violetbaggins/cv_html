@@ -27,6 +27,10 @@ html, body{
 .tx-wh{
     color:#FFF;
 }
+.tx-wh:hover{
+    color:#FFFFFF;
+    text-decoration: dotted;
+}
 .tx-bl{
     color:#000;
 }
@@ -153,16 +157,16 @@ html, body{
     color: #FDE21A;
 }
 .cir-1 {
-    width: 200px;
+    width: 90%;
 }
 .cir-2{
-    width: 160px;
+    width: 70%;
 }
 .cir-3{
-    width: 140px;
+    width: 60%;
 }
 .cir-4{
-    width: 120px;
+    width: 50%;
 }
 .bar-txt{
     text-align:right;
