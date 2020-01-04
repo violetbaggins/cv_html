@@ -36,6 +36,7 @@ html, body{
 .br-gr{
 	border: solid 1px #6B6B6B;
 }
+
 /* TEXT COLORS*/
 .tx-wh{
     color:#FFF;
@@ -193,6 +194,24 @@ html, body{
     font-weight: 400;
     color: #6B6B6B;
 }
+.empresa{
+	width:500px;
+}
+/* ANIMATIONS */
+.animation{
+	background-color: #FDE21A;
+  animation-name: example;
+  animation-duration: 4s;
+}
+.animation2{
+	position: relative;
+  background-color: #FDE21A;
+  animation-name: example2;
+  animation-duration: 4s;
+}
+.transform{
+    transform: scale(2,2);
+}
 /* CSS IDs*/
 #row-personal-foto img{
     border-radius: 150px;
@@ -206,6 +225,44 @@ html, body{
     border-radius: 150px;
     border: solid white 5px;
 }
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  .tooltip {
+    visibility: visible;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  /* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+/*#col-job-item:hover{
+    z-index: 1;
+    transform: scale(2,2);
+    top:0px;
+    left:0px;
+    overflow: hidden;
+}*/
 /* PARA Q SE AGRANDEN LOS PAID JOB EXPERIENCE*/
 #row-work-exp-content {
     position: relative;
@@ -226,4 +283,17 @@ html, body{
 }
 #col-job-item:hover .job-description{
     visibility:visible;
+}
+
+
+@keyframes example {
+  from {background-color: gray;}
+  to {background-color: #FDE21A;}
+}
+@keyframes example2 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:10px; top:0px;}
+  50%  {background-color:blue; left:10px; top:10px;}
+  75%  {background-color:green; left:0px; top:10px;}
+  100% {background-color:#FDE21A; left:0px; top:0px;}
 }
