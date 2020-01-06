@@ -243,10 +243,18 @@ html, body{
     border-radius: 150px;
     border: solid white 5px;
 }
+/* the story classes */
+#row-go-back{
+    position: relative;
+} 
 /* PARA Q SE AGRANDEN LOS PAID JOB EXPERIENCE*/
 #row-work-exp-content {
     position: relative;
-  }
+}
+#col-go-back{
+    position: fixed;
+    bottom: 10px;
+}
   #col-job-item:hover{
     position: absolute;
     left: 0;
