@@ -6,8 +6,15 @@ html, body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
+body{
+	background-image: url('../img/prism.png');
+	background-attachment:fixed;
+}
 .container{
     max-width: 960px;
+	box-shadow: -5px -5px 20px #000000;
+	margin: 10px auto;
+	background-color:#FFFFFF;
 }
 .ocupa{
     visibility: hidden;
@@ -122,6 +129,9 @@ html, body{
 .w-400{
     font-weight: 400;
 }
+.w-600{
+    font-weight: 600;
+}
 .w-800{
     font-weight: 800;
 }
@@ -133,7 +143,7 @@ html, body{
 
 /*CLASES*/
 .info{
-    font-weight: 100;
+    font-weight: 200;
     font-size: 18px;
     color: #FFFFFF;
 }
@@ -154,6 +164,11 @@ html, body{
     background-color:#FDE21A;
     color:#000000;
     font-weight: 100;
+}
+.mark-yellow-story{
+    background-color:#FDE21A;
+    color:#000000;
+    font-weight: 400;
 }
 .mark-gray{
     background-color:#6B6B6B;
@@ -274,7 +289,11 @@ html, body{
 }
 /* MEDIA QUERIES*/
 @media screen and (max-width: 768px) {
-    .f-24{
+    .container{
+		margin:0;
+		box-shadow: 0px 0px 0px #000000;
+}
+	.f-24{
         font-size: 18px;
     }
     .f-18{
@@ -283,6 +302,9 @@ html, body{
     .f-16{
         font-size: 14px;
     }
+	.f-14{
+        font-size: 12px;
+    }
     .f-12{
         font-size: 10px;
     }
@@ -290,4 +312,11 @@ html, body{
         width: 100%;
         height: 168px;
     }
+	h3{
+		font-size:22px;
+	}
+	h6{
+		font-size:14px;
+		line-height:1.5em;
+	}
   }
